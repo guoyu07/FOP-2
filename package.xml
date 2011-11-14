@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>FOP</name>
+ <channel>pear.sashabereka.com</channel>
+ <summary>Wrapper for Apache FOP application</summary>
+ <description>Generates PDF using xsl template</description>
+ <lead>
+  <name>Sasha Bereka</name>
+  <user>sashabereka</user>
+  <email>tender.post@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-11-11</date>
+ <time>12:08:51</time>
+ <version>
+  <release>1.0.0</release>
+  <api>1.0.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license>none</license>
+ <notes>
+first FOP release
+ </notes>
+ <contents>
+  <dir baseinstalldir="." name="/">
+   <file baseinstalldir="." md5sum="e27ac7b6d9c386a91f49395f47c35702" name="FOP/Config.php" role="php" />
+   <file baseinstalldir="." md5sum="d14878056b97f63290113ac67bd0f78e" name="FOP/Exception.php" role="php" />
+   <file baseinstalldir="." md5sum="83f219608133a2ca4db5bd0f84623768" name="FOP/XML.php" role="php" />
+   <file baseinstalldir="." md5sum="2f214e02c510a2adb1e3f34f4c74c70d" name="FOP/XSL.php" role="php" />
+   <file baseinstalldir="." md5sum="9bf0061cf980eb5d2e661d7c97379333" name="FOP.php" role="php" />
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.6</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+ <changelog>
+  <release>
+   <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-11-11</date>
+   <license>none</license>
+   <notes>
+first FOP release
+   </notes>
+  </release>
+ </changelog>
+</package>
