@@ -50,7 +50,7 @@
  * @author    Sasha Bereka <tender.post@gmail.com>
  * @copyright 2011 Sasha Bereka <tender.post@gmail.com>
  * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
- * @version   Release: 1.0.0
+ * @version   Release: 1.1.0
  * @link      http://github.com/sashabereka/FOP/tree
  * @since     Class available since Release 1.0.0
  */

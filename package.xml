@@ -13,27 +13,31 @@
   <email>tender.post@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2011-11-11</date>
- <time>12:08:51</time>
+ <date>2011-12-27</date>
+ <time>12:50:29</time>
  <version>
-  <release>1.0.0</release>
-  <api>1.0.0</api>
+  <release>1.1.0</release>
+  <api>1.1.0</api>
  </version>
  <stability>
   <release>stable</release>
   <api>stable</api>
  </stability>
- <license>none</license>
+ <license>BSD</license>
  <notes>
-first FOP release
+Generates PDF using xsl template
  </notes>
  <contents>
   <dir baseinstalldir="." name="/">
-   <file baseinstalldir="." md5sum="e27ac7b6d9c386a91f49395f47c35702" name="FOP/Config.php" role="php" />
-   <file baseinstalldir="." md5sum="d14878056b97f63290113ac67bd0f78e" name="FOP/Exception.php" role="php" />
-   <file baseinstalldir="." md5sum="83f219608133a2ca4db5bd0f84623768" name="FOP/XML.php" role="php" />
-   <file baseinstalldir="." md5sum="2f214e02c510a2adb1e3f34f4c74c70d" name="FOP/XSL.php" role="php" />
-   <file baseinstalldir="." md5sum="9bf0061cf980eb5d2e661d7c97379333" name="FOP.php" role="php" />
+   <file baseinstalldir="." md5sum="1084d080affaefa5f5be11137406cd38" name="FOP/Autoload.php" role="php" />
+   <file baseinstalldir="." md5sum="ec70c812dac238f0301d7bcfc4e198d3" name="FOP/Config.php" role="php" />
+   <file baseinstalldir="." md5sum="8d065ceca8fc26fcf10b09dad5fdf3f3" name="FOP/Exception.php" role="php" />
+   <file baseinstalldir="." md5sum="108f340bf78489f9f652569f1d7040de" name="FOP/XML.php" role="php" />
+   <file baseinstalldir="." md5sum="55a2ab66ba2608b6ce281eff407eb629" name="FOP/XSL.php" role="php" />
+   <file baseinstalldir="." md5sum="903c27c20d7a93cf411ad6c3e1a406af" name="tests/FOPTest.php" role="test" />
+   <file baseinstalldir="." md5sum="61962fe7b8fcc63c0304c01b06735741" name="tests/FOP/ConfigTest.php" role="test" />
+   <file baseinstalldir="." md5sum="0067512d70c80e79402a6ecd939cd5f2" name="tests/FOP/XMLTest.php" role="test" />
+   <file baseinstalldir="." md5sum="27bc2ddb76d33f740178a610df7a2d38" name="FOP.php" role="php" />
   </dir>
  </contents>
  <dependencies>
@@ -61,6 +65,21 @@ first FOP release
    <license>none</license>
    <notes>
 first FOP release
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>1.1.0</release>
+    <api>1.1.0</api>
+   </version>
+   <stability>
+    <release>stable</release>
+    <api>stable</api>
+   </stability>
+   <date>2011-12-27</date>
+   <license>BSD</license>
+   <notes>
+Generates PDF using xsl template
    </notes>
   </release>
  </changelog>

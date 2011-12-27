@@ -43,10 +43,7 @@
  */
 
 $current_dir = dirname(__FILE__).'/';
-include_once($current_dir . 'FOP/Config.php');
-include_once($current_dir . 'FOP/XML.php');
-include_once($current_dir . 'FOP/XSL.php');
-include_once($current_dir . 'FOP/Exception.php');
+require_once($current_dir.'FOP/Autoload.php');
 
 /**
  * FOP is php wrapper for Apache FOP application
@@ -55,7 +52,7 @@ include_once($current_dir . 'FOP/Exception.php');
  * @author    Sasha Bereka <tender.post@gmail.com>
  * @copyright 2011 Sasha Bereka <tender.post@gmail.com>
  * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
- * @version   Release: 1.0.0
+ * @version   Release: 1.1.0
  * @link      http://github.com/sashabereka/FOP/tree
  * @since     Class available since Release 1.0.0
  */
@@ -158,7 +155,8 @@ class FOP {
             throw new FOP_Exception('Can\'t find xsl template file: "'.$this->_xsl->getFilePath().'"', 1008);
         }
         $xml_file_path = $this->_xml->save();
-        if ($Config->fopConfXMLRoot and is_file($Config->fopConfXMLRoot)) {
+        $conf = '';
+	    if ($Config->fopConfXMLRoot and is_file($Config->fopConfXMLRoot)) {
 	        $conf = '-c '.$Config->fopConfXMLRoot;
         }
         $bash = $Config->pathToFOP.'fop '.$conf.' -xml '.$xml_file_path.' -xsl '.$this->_xsl->getFilePath().' -pdf '.$pdf_file_path.' 2>&1';

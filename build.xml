@@ -12,22 +12,23 @@
         <option name="packagedirectory" value="."/>
         <fileset dir="." >
             <include name="FOP/*" />
+            <include name="tests/**" />
             <include name="FOP.php" />
         </fileset>
 
         <option name="baseinstalldir" value="."/>
         <option name="channel" value="pear.sashabereka.com"/>
 
-        <option name="releaseversion" value="1.0.0"/>
-        <option name="apiversion" value="1.0.0"/>
+        <option name="releaseversion" value="1.1.0"/>
+        <option name="apiversion" value="1.1.0"/>
         <option name="apistability" value="stable"/>
 
         <option name="summary" value="Wrapper for Apache FOP application"/>
         <option name="description" value="Generates PDF using xsl template"/>
-        <option name="notes" value="first FOP release"/>
+        <option name="notes" value="Generates PDF using xsl template"/>
 
         <option name="releasestability" value="stable"/>
-        <option name="license" value="none"/>
+        <option name="license" value="BSD"/>
         <option name="phpdep" value="5.2.0"/>
         <option name="pearinstallerdep" value="1.4.6"/>
         <option name="packagetype" value="php"/>

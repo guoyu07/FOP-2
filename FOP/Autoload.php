@@ -39,27 +39,17 @@
  * @author    Sasha Bereka <tender.post@gmail.com>
  * @copyright 2011 Sasha Bereka <tender.post@gmail.com>
  * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
- * @since     File available since Release 1.0.0
+ * @since     File available since Release 1.1.0
  */
 
-/**
- * Exception codes:
- * 1001 - Command output is empty
- * 1002 - Can't get Apache FOP version
- * 1003 - FOP config property doesn't exist
- * 1004 - Variable name for pdf template is invalid
- * 1005 - Directory for storing xml data file doesn't exist and can't be created
- * 1006 - Directory for storing xml data file is not writable
- * 1007 - Can't find xml data file
- * 1008 - Can't find xsl template file
- * 1009 - Rendering pdf error
- *
- * @author    Sasha Bereka <tender.post@gmail.com>
- * @copyright 2011 Sasha Bereka <tender.post@gmail.com>
- * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
- * @version   Release: 1.1.0
- * @link      http://github.com/sashabereka/FOP/tree
- * @since     Class available since Release 1.0.0
- */
 
-class FOP_Exception extends Exception {}
+function fop_autoload($class) {
+	$class_path = str_replace('_', '/', $class);
+	$fop_dir = realpath(dirname(__FILE__).'/../').'/';
+	$class_path = $fop_dir.$class_path.'.php';
+	if (is_file($class_path)) {
+		require_once($class_path);
+	}
+}
+
+spl_autoload_register('fop_autoload');

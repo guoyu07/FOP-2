@@ -19,9 +19,9 @@ $version = $FOP->getVersion();
 $is_installed = $FOP->isInstalled();
 $configuration = $FOP->getConfiguration();
 
-//dump($version);
-//dump($is_installed);
-//dump($configuration);
+//var_dump($version);
+//var_dump($is_installed);
+//var_dump($configuration);
 
 $FOP
 	->setData('var', 'hello world')
