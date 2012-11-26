@@ -1,6 +1,8 @@
 FOP
 =============
 
+FOP is php wrapper for Apache FOP application. Generates pdf files using xsl template
+
 Installation
 ------------
 
